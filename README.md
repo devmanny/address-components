@@ -12,11 +12,11 @@ or
 
 ```
 
-const { getComponentesForAddress } = require("address-components")
+const { getComponentsForAddress } = require("address-components")
 
 const myFunction = async () => {
 
-  const [components, error] = await getComponentesForAddress(
+  const [components, error] = await getComponentsForAddress(
     "Calle falsa 123, springfield",
     GOOGLE_MAPS_API_KEY
   )
