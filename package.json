@@ -1,6 +1,6 @@
 {
   "name": "address-components",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "split address into its components",
   "main": "index.js",
   "scripts": {
