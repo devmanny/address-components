@@ -1,6 +1,6 @@
 const axios = require("axios")
 
-const getComponentesForAddress = async function (address, apikey) {
+const getComponentsForAddress = async function (address, apikey) {
 
   try {
 
@@ -32,9 +32,6 @@ const getComponentesForAddress = async function (address, apikey) {
     return [null, err]
   }
 
-
-  return [null, null]
-
 }
 
-exports.getComponentesForAddress = getComponentesForAddress;
+exports.getComponentsForAddress = getComponentsForAddress;
