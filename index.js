@@ -9,6 +9,10 @@ const getComponentsForAddress = async function (address, apikey) {
     } = await axios({
       "method": "GET",
       "url": "https://maps.googleapis.com/maps/api/place/findplacefromtext/json",
+      "crossdomain": true,
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+      },
       "params": {
         "input": address,
         "inputtype": "textquery",
@@ -19,6 +23,10 @@ const getComponentsForAddress = async function (address, apikey) {
     const { data: { result: { address_components } } } = await axios({
       "method": "GET",
       "url": "https://maps.googleapis.com/maps/api/place/details/json",
+      "crossdomain": true,
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+      },
       "params": {
         "place_id": placeID,
         "fields": "formatted_address,address_components",
